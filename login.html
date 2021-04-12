@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Login<title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="login.css">
+        <script>
+          function userCheck(username, password) {
+            //just pseudocode
+					    if (username == <correctUsernameValue> && password == <correctPasswordValue>) {
+						    document.getElementById('my-output').innerHTML += "Successfully Logged In";
+						    }
+				    	else {
+						    document.getElementById('my-output').innerHTML += "Incorrect Username or Password";
+						    }
+					 }
+				</script>
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <h3>Login</h3>
+            </header>
+            <main>
+                <table id = "height">
+                    <tr>
+						            <td>Username: </td>
+						            <td><input type = "text" id = "username" name = "Username"/></td>
+					          </tr>
+				          	<tr>
+				             		<td>Password: </td>
+				            		<td><input type = "text" id = "password" name = "Password"/></td>
+                    </tr>
+                <button type = 'button' onClick = "userCheck(username.value,password.value)">Login</button>
+                <div id= "my-output"></div>
+            </main>
+            <footer>
+                <p>Unity In Community 2021</p>
+            </footer>
+        </div>
+    </body>
+</html>
